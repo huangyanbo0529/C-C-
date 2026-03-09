@@ -1,0 +1,124 @@
+{
+  "files.defaultLanguage": "c",
+  "editor.formatOnType": true,
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.snippetSuggestions": "top",
+  "files.associations": {
+    "iostream": "cpp",
+    "stdio": "c",
+    "string.h": "c"
+  },
+  "editor.fontSize": 18,
+  "remote.SSH.remotePlatform": {
+    "Ubuntu22.04": "linux",
+    "ubuntu22.04": "linux",
+    "ROS2": "linux"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "terminal.integrated.env.osx": {
+    "PYTHONPATH": "${workspaceFolder}/"
+  },
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": "${workspaceFolder}/"
+  },
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "${workspaceFolder}/"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+  "cmake.configureOnOpen": true,
+  "cmake.options.statusBarVisibility": "visible",
+  "editor.fontFamily": "'JetBrains Mono  NL','Source Code Pro',Consolas, 'Courier New', monospace",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontFamily": "'MesloLGL Nerd Font','JetBrains Mono  NL','Source Code Pro',Consolas, 'Courier New', monospace",
+  "terminal.integrated.copyOnSelection": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "black-formatter.args": [
+    "--line-length=120",
+    "--skip-string-normalization"
+  ],
+  "python.languageServer": "Pylance",
+  "terminal.integrated.enableImages": true,
+  "git.autofetch": false,
+  "C_Cpp.intelliSenseEngine": "default",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontSize": 17,
+  "editor.parameterHints.enabled": false,
+  "editor.inlayHints.enabled": "off",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "editor.formatOnSave": true,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "cmake.configureOnEdit": false,
+  "cmake.generator": "Ninja",
+  "cmake.copyCompileCommands": "",
+  "workbench.startupEditor": "none",
+  "editor.inlineSuggest.showToolbar": "always",
+  "files.autoSave": "afterDelay",
+  "update.enableWindowsBackgroundUpdates": false,
+  "qt-core.qtInstallationRoot": "D:\\software\\Qt\\Qt5.14.2",
+  "update.mode": "manual",
+  "chat.commandCenter.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "workbench.colorTheme": "GitHub Dark",
+  "extensions.autoUpdate": false,
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "Lingma.cloudModelAutoTriggerGenerateLength": "disable",
+  "chat.disableAIFeatures": false,
+  "window.zoomLevel": 0.5,
+  "qt-ui.customWidgetsDesignerExePath": "D:\\software\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\bin\\designer.exe",
+  "qt-qml.qmlls.customExePath": "D:\\software\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\bin\\qml.exe",
+  "redhat.telemetry.enabled": true,
+  "cSpell.userWords": [
+    "buildtool",
+    "Consolas",
+    "cout",
+    "endl",
+    "fileheader",
+    "funcdocstring",
+    "huangyb",
+    "Ints",
+    "Meslo",
+    "mynode",
+    "pytest",
+    "rclcpp",
+    "rclpy",
+    "rosidl",
+    "sout",
+    "Wextra",
+    "Wpedantic"
+  ],
+  "explorer.compactFolders": false,
+  "files.enableTrash": false,
+  "[cpp]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[c]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  }
+}

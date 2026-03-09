@@ -1,0 +1,82 @@
+{
+  "HEADER": {
+    "prefix": "add_head_file",
+    "body": [
+      "#!/usr/bin/env python3",
+      "# -*- encoding: utf-8 -*-",
+      "",
+      "",
+      "'''",
+      "@Author  :   huangyb",
+      "@Ide     :   vscode & python",
+      "@File    :   $TM_FILENAME",
+      "@Time    :   $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+      "'''",
+      "",
+      "$0"
+    ],
+    "description": "Add Head File"
+  },
+  "MAIN": {
+    "prefix": "main",
+    "body": [
+      "if __name__ == \"__main__\":",
+      "    $0"
+    ],
+    "description": "python main function"
+  },
+  "FUNCTION_DOC": {
+    "prefix": "funcdocstring",
+    "body": [
+      "\"\"\"",
+      "${1:[summary]}",
+      "",
+      ":param ${2:param}: ${3:[description]}",
+      ":type ${2:param}: ${4:[type]}",
+      ":return: ${5:[description]}",
+      ":rtype: ${6:[type]}",
+      "\"\"\""
+    ],
+    "description": "Generate a Python docstring"
+  },
+  "Ros2_Create_Node": {
+    "prefix": "ros2_node_python",
+    "body": [
+      "\"\"\"",
+      "需求：",
+      "步骤：",
+      "    1.导包",
+      "    2.初始化 ROS2 客户端",
+      "    3.定义节点类",
+      "        ",
+      "    4.调用spin函数，并传入节点对象",
+      "    5.释放资源",
+      "\"\"\"",
+      "",
+      "# 1.导包",
+      "import rclpy",
+      "from rclpy.node import Node",
+      "",
+      "",
+      "class MyNode(Node):",
+      "    def __init__(self):",
+      "       super().__init__(\"mynode_node_py\")",
+      "       self.get_logger().info(\"\")",
+      "",
+      "",
+      "def main():",
+      "    # 2.初始化 ROS2 客户端",
+      "    rclpy.init()",
+      "",
+      "    # 4.调用spin函数，并传入节点对象",
+      "    rclpy.spin(MyNode())",
+      "    # 5.释放资源",
+      "    rclpy.shutdown()",
+      "",
+      "",
+      "if __name__ == \"__main__\":",
+      "    main()"
+    ],
+    "description": "ros2 create a node and main function"
+  }
+}
