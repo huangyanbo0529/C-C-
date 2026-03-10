@@ -1,5 +1,5 @@
 {
-  "files.defaultLanguage": "c",
+  "files.defaultLanguage": "cpp",
   "editor.formatOnType": true,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.acceptSuggestionOnEnter": "on",
@@ -55,7 +55,7 @@
   "python.languageServer": "Pylance",
   "terminal.integrated.enableImages": true,
   "git.autofetch": false,
-  "C_Cpp.intelliSenseEngine": "default",
+  "C_Cpp.intelliSenseEngine": "disabled",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.fontSize": 17,
   "editor.parameterHints.enabled": false,
@@ -99,6 +99,7 @@
     "Ints",
     "Meslo",
     "mynode",
+    "myparam",
     "pytest",
     "rclcpp",
     "rclpy",
@@ -120,5 +121,16 @@
     "editor.insertSpaces": true,
     "editor.detectIndentation": false,
     "editor.defaultFormatter": "ms-vscode.cpptools"
-  }
+  },
+  // 强制 CMake Tools 使用指定的构建目录
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        // 以下是可选的优化参数，提升 clangd 体验（推荐添加）
+        "--background-index",        // 后台建立索引，不阻塞编辑
+        "--clang-tidy",              // 启用 clang-tidy 静态检查
+        "--completion-style=detailed", // 详细的补全提示
+        "--header-insertion=iwyu",   // 智能插入头文件
+        // "--fallback-style=Google"    // 代码格式化风格（可选）
+    ],
 }
